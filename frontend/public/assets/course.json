@@ -1,0 +1,12 @@
+[
+  { "course_id": "C001", "title": "Full Stack Web Development Bootcamp", "price": 4999, "enrolled": 120, "status": "Active", "category": "Development" },
+  { "course_id": "C002", "title": "UI/UX Design Masterclass", "price": 2999, "enrolled": 85, "status": "Active", "category": "Design" },
+  { "course_id": "C003", "title": "Python for Data Science", "price": 3999, "enrolled": 150, "status": "Active", "category": "Data Science" },
+  { "course_id": "C004", "title": "Digital Marketing Essentials", "price": 2499, "enrolled": 60, "status": "Active", "category": "Marketing" },
+  { "course_id": "C005", "title": "Machine Learning with Projects", "price": 6999, "enrolled": 95, "status": "Active", "category": "Data Science" },
+  { "course_id": "C006", "title": "Ethical Hacking & Cyber Security", "price": 5999, "enrolled": 110, "status": "Active", "category": "Security" },
+  { "course_id": "C007", "title": "Java Programming Zero to Hero", "price": 3499, "enrolled": 70, "status": "Inactive", "category": "Programming" },
+  { "course_id": "C008", "title": "React.js Frontend Development", "price": 3999, "enrolled": 130, "status": "Active", "category": "Development" },
+  { "course_id": "C009", "title": "AWS Cloud Practitioner Certification", "price": 5499, "enrolled": 45, "status": "Active", "category": "Cloud" },
+  { "course_id": "C010", "title": "Adobe Photoshop & Illustrator", "price": 1999, "enrolled": 50, "status": "Active", "category": "Design" }
+]

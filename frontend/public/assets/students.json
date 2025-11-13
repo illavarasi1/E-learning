@@ -1,0 +1,102 @@
+[
+  {
+    "student_id": "S001",
+    "student_name": "Anjali Nair",
+    "email": "anjali.nair@example.com",
+    "enrolled_course": "Adobe Photoshop & Illustrator",
+    "progress": "50%",
+    "registration_date": "2024-06-14",
+    "avatar": "https://randomuser.me/api/portraits/women/44.jpg",
+     "role": "Student"
+  },
+  {
+    "student_id": "S002",
+    "student_name": "Rahul Mehta",
+    "email": "rahul.mehta@example.com",
+    "enrolled_course": "Full Stack Web Development",
+    "progress": "70%",
+    "registration_date": "2024-07-02",
+    "avatar": "https://randomuser.me/api/portraits/men/45.jpg",
+     "role": "Student"
+  },
+  {
+    "student_id": "S003",
+    "student_name": "Priya Sharma",
+    "email": "priya.sharma@example.com",
+    "enrolled_course": "UI/UX Design Fundamentals",
+    "progress": "80%",
+    "registration_date": "2024-05-28",
+    "avatar": "https://randomuser.me/api/portraits/women/32.jpg",
+     "role": "Student"
+  },
+  {
+    "student_id": "S004",
+    "student_name": "Vikram Singh",
+    "email": "vikram.singh@example.com",
+    "enrolled_course": "Python for Data Science",
+    "progress": "40%",
+    "registration_date": "2024-08-11",
+    "avatar": "https://randomuser.me/api/portraits/men/34.jpg",
+     "role": "Student"
+  },
+  {
+    "student_id": "S005",
+    "student_name": "Sneha Kapoor",
+    "email": "sneha.kapoor@example.com",
+    "enrolled_course": "Digital Marketing Essentials",
+    "progress": "65%",
+    "registration_date": "2024-09-05",
+    "avatar": "https://randomuser.me/api/portraits/women/29.jpg",
+      "role": "Student"
+  },
+  {
+    "student_id": "S006",
+    "student_name": "Arjun Patel",
+    "email": "arjun.patel@example.com",
+    "enrolled_course": "React JS Advanced",
+    "progress": "75%",
+    "registration_date": "2024-06-21",
+    "avatar": "https://randomuser.me/api/portraits/men/27.jpg",
+      "role": "Student"
+  },
+  {
+    "student_id": "S007",
+    "student_name": "Kavya Reddy",
+    "email": "kavya.reddy@example.com",
+    "enrolled_course": "Motion Graphics & Animation",
+    "progress": "55%",
+    "registration_date": "2024-07-15",
+    "avatar": "https://randomuser.me/api/portraits/women/56.jpg",
+      "role": "Student"
+  },
+  {
+    "student_id": "S008",
+    "student_name": "Amit Verma",
+    "email": "amit.verma@example.com",
+    "enrolled_course": "Cloud Computing with AWS",
+    "progress": "35%",
+    "registration_date": "2024-08-30",
+    "avatar": "https://randomuser.me/api/portraits/men/22.jpg",
+      "role": "Student"
+  },
+  {
+    "student_id": "S009",
+    "student_name": "Riya Das",
+    "email": "riya.das@example.com",
+    "enrolled_course": "Frontend Development with Angular",
+    "progress": "90%",
+    "registration_date": "2024-05-19",
+    "avatar": "https://randomuser.me/api/portraits/women/15.jpg",
+      "role": "Student"
+  },
+  {
+    "student_id": "S010",
+    "student_name": "Devansh Gupta",
+    "email": "devansh.gupta@example.com",
+    "enrolled_course": "UI Design with Figma",
+    "progress": "60%",
+    "registration_date": "2024-09-25",
+    "avatar": "https://randomuser.me/api/portraits/men/41.jpg",
+      "role": "Student"
+  }
+]
