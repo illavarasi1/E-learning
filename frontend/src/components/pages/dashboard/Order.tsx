@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { getOrders } from "../../services/httpServices";
 import { useAppContext } from "../../appcontext/AppContext";
 import Pagination from "../../pagination/Pagination";
-// import OrderViewModal from "../../view/ViewOrders";
 import type { Ordered } from "../../types/orders";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -10,23 +9,17 @@ import { addOrder } from "../../slicers/OrderSlice";
 
 const Order = () => {
     const { orders, setOrders } = useAppContext();
-    const navigate=useNavigate();
-    const dispatch=useDispatch();
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
     useEffect(() => {
         getOrders().then(data => {
             console.log("COMPONENT RECEIVED:", data);
         });
     }, [setOrders]);
-    // const [selectedOrder, setSelectedOrder] = useState<any>(null);
     const [openMenu, setOpenMenu] = useState<string | null>(null);
-
-
-    // const handleView = (order: any) => {
-    //     setSelectedOrder(order);
-    // };
-    const onViewClick = (addorders:Ordered) => {
+    const onViewClick = (addorders: Ordered) => {
         dispatch(addOrder(addorders))
-    navigate('/order/view')
+        navigate('/order/view')
     }
     const handleDelete = (orderId: string): void => {
         setOrders((prev: Ordered[]) =>
@@ -115,19 +108,6 @@ const Order = () => {
                                             <td className="px-6 py-4 whitespace-nowrap text-sm">
                                                 <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">{order.status}</span>
                                             </td>
-                                            {/* <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                                                <button className="text-gray-500 dark:text-gray-400 hover:text-primary">
-                                                    <span className="material-symbols-outlined">
-                                                        <button
-                                                            className="px-2 py-1 rounded bg-blue-500 text-white text-xs"
-                                                            onClick={() => handleView(order)}
-                                                        >
-                                                            View
-                                                        </button>
-
-                                                    </span>
-                                                </button>
-                                            </td> */}
                                             <td className="relative px-6 py-4 whitespace-nowrap text-sm font-medium">
 
                                                 {/* 3-dot button */}
@@ -143,7 +123,7 @@ const Order = () => {
                                                     <div className="absolute right-0 mt-2 w-40 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-md shadow-lg z-50">
 
                                                         <button
-                                                            onClick={() => { setOpenMenu(null); onViewClick(order)}}
+                                                            onClick={() => { setOpenMenu(null); onViewClick(order) }}
                                                             className="block w-full text-left px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700"
                                                         >
                                                             View
@@ -172,7 +152,7 @@ const Order = () => {
                                     ))}
                                 </tbody>
                             </table>
-                        
+
 
                         </div>
                         {/* <!-- Pagination --> */}

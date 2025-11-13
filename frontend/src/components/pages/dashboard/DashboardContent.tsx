@@ -17,8 +17,6 @@ const DashboardContent = () => {
                             ))}
                         </div>
 
-                        {/* You can continue adding the rest exactly same way */}
-
                     </>);
 }
 export default DashboardContent;

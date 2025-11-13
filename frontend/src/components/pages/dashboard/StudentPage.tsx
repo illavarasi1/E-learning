@@ -15,7 +15,6 @@ const StudentPage = () => {
     useEffect(() => {
         getStudents().then((response) => {
             console.log("COMPONENT RECEIVED:", response);
-            // Ensure it's always an array
             const dataArray = Array.isArray(response.data)
                 ? response.data
                 : [response.data];
@@ -27,7 +26,7 @@ const StudentPage = () => {
         dispatch(addStudent(addstudents))
         navigate('/student/view')
     }
-const onUpdateClick = (addstudents: Student) => {
+    const onUpdateClick = (addstudents: Student) => {
         dispatch(addStudent(addstudents))
         navigate('/student/update')
     }
@@ -134,7 +133,7 @@ const onUpdateClick = (addstudents: Student) => {
                                             <td className="p-4">
                                                 <div className="flex justify-center gap-2">
                                                     <button onClick={() => { onUpdateClick(student) }}
-                                                    className="p-2 rounded-lg hover:bg-primary/10 text-text-secondary-light hover:text-primary"><span className="material-symbols-outlined">edit</span></button>
+                                                        className="p-2 rounded-lg hover:bg-primary/10 text-text-secondary-light hover:text-primary"><span className="material-symbols-outlined">edit</span></button>
                                                     <button onClick={() => { onViewClick(student) }}
                                                         className="p-2 rounded-lg hover:bg-primary/10 text-text-secondary-light hover:text-primary"><span className="material-symbols-outlined">visibility</span></button>
                                                     <button className="p-2 rounded-lg hover:bg-red-100 text-text-secondary-light hover:text-red-600"><span className="material-symbols-outlined">delete</span></button>

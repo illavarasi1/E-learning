@@ -11,20 +11,20 @@ import StudentPage from "./components/pages/dashboard/StudentPage"
 function App() {
   return (
     <>
-          <Routes>
-           <Route path="/" element={<Dash />}>
-        <Route index element={<DashboardContent />} />
-        <Route path="/course" element={<Course />} />
-        <Route path="/student" element={<StudentPage/>} />
-        <Route path="/student/add" element={<AddNewUser/>} />
-        <Route path="/student/update" element={<AddNewUser/>} />
-        <Route path="/student/view" element={<ViewStudents/>} />
-        <Route path="/order" element={<Order/>} />
-<Route path="/order/view" element={<OrderViewModal/>} />
+      <Routes>
+        <Route path="/" element={<Dash />}>
+          <Route index element={<DashboardContent />} />
+          <Route path="/course" element={<Course />} />
+          <Route path="/student" element={<StudentPage />} />
+          <Route path="/student/add" element={<AddNewUser />} />
+          <Route path="/student/update" element={<AddNewUser />} />
+          <Route path="/student/view" element={<ViewStudents />} />
+          <Route path="/order" element={<Order />} />
+          <Route path="/order/view" element={<OrderViewModal />} />
         </Route>
-                
 
-          </Routes>
+
+      </Routes>
 
     </>
   )

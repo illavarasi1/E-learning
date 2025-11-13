@@ -4,16 +4,12 @@ import { useEffect } from "react";
 import { getCourse } from "../../services/httpServices";
 
 const Course = () => {
-//     const [openRow, setOpenRow] = useState<number | null>(null);
 
-// const toggleRow = (id: number) => {
-//   setOpenRow(openRow === id ? null : id);
-// };
     useEffect(() => {
-    getCourse().then(data => {
-      console.log("COMPONENT RECEIVED:", data);
-    });
-  }, []);
+        getCourse().then(data => {
+            console.log("COMPONENT RECEIVED:", data);
+        });
+    }, []);
     return (
         <main className="flex-1 p-4 sm:p-6 lg:p-8">
             <div className="mx-auto max-w-7xl">
